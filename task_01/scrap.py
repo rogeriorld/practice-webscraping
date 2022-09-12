@@ -18,7 +18,7 @@ def request(page='pages/frames/'):
         print(error)
     return None
 
-def getTheTurtles():
+def get_turtles():
     page = 'pages/frames/'
     turtlesList = []
 
@@ -50,4 +50,4 @@ def export_csv(turtles):
         for turtle in turtles:
             wr.writerow((turtle['name'], turtle['description'].strip()))
 
-export_csv(getTheTurtles())
+export_csv(get_turtles())
